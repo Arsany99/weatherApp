@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo.png" type="image/png">
+
+    <title>Wither App</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="conatiner px-3 py-5 text-center">
+            <input type="search" placeholder="find your location" id="search" class="w-100 mx-auto rounded-5 py-3 px-4 bg-main-color mb-5 text-white">
+            <div class="row g-0">
+                <div class="item col-md-4 bg-sec-color m-0 rounded-4">
+                    <div class="d-flex justify-content-between py-2 px-3 bg-main-color text-light rounded-start" id="today-data">
+                        <p id="today-date-day-name" class="my-auto">
+                            sunday
+                        </p>
+                        <span>
+                            <span id="today-date-day-number" class="my-auto">30</span>
+                            <span id="today-date-month" class="my-auto">may</span>
+                        </span>
+    
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="today-location" class="fs-4">cairo</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-1 fw-bolder">
+                                <span id="today-temp">20</span>
+                                <span><sup>0</sup>c</span>
+                            </span>
+                            <img class="" id="today-condition-img" src="image/113.png" alt="Weather Icon">  
+                        </div>
+                        <p id="today-condition-text" class="fs-6 text-light-blue"> sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="image/icon-umberella.png" class="footer-icon  h-75 mx-2" alt="">
+                            <p id="humidity"></p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="image/icon-wind.png" class="footer-icon h-75 mx-2" alt="">
+                            <p id="wind"></p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="image/icon-compass.png" class="footer-icon h-75 mx-2" alt="img">
+                            <p id="wind-direction"></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--tomorrow-->
+                <div class="item col-md-4 bg-main-color m-0 rounded-4">
+                    <div class="py-2 text-center bg-sec-color text-light" id="tomorrow-date">
+                        <p class="next-day-name my-auto">friday</p>
+                    </div>
+                    <div class="item-content text-start text-light text-center pt-5" id="tomorrow">
+                        <img class="next-condition-img" src="image/116.png" alt="img">
+                        <h3>
+                            <span class="next-max-temp"></span>
+                            <span><sup>0</sup>c</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next-min-temp">15</span>
+                            <span><sup>0</sup>c</span>
+                        </h5>
+                        <p class="next-condition-text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+
+                </div>
+                <!--after tomorrow-->
+                <div class="item col-md-4 bg-sec-color m-0 rounded-4">
+                    <div class="py-2 text-center bg-main-color text-light rounded-end">
+                        <p class="next-day-name my-auto">friday</p>
+                    </div>
+                    <div class="item-content text-start text-light text-center pt-5">
+                        <img class="next-condition-img" src="image/176.png" alt="img">
+                        <h3>
+                            <span class="next-max-temp"></span>
+                            <span><sup>0</sup>c</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next-min-temp">15</span>
+                            <span><sup>0</sup>c</span>
+                        </h5>
+                        <p class="next-condition-text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+
+    
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

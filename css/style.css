@@ -1,0 +1,15 @@
+.bg-main-color {
+    background-color: #1e202b;
+    color: white; /* Adjust text color to ensure visibility */
+}
+
+.bg-sec-color {
+    background-color: gray;
+    color: black; /* Adjust text color to ensure visibility */
+}
+
+
+
+body{
+    background-image: url(../image/banner.png);
+}
